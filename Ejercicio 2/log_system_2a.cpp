@@ -51,8 +51,8 @@ int main()
     logMessage("Este es un mensaje de depuración", DEBUG);
     logMessage("El sistema ha iniciado correctamente", INFO);
     logMessage("Se ha detectado un posible problema", WARNING);
-    logMessage("Error al conectar con la base de datos", ERROR);
-    logMessage("Fallo crítico: el sistema debe reiniciarse", CRITICAL);
+    logMessage("Error al conectar con un servicio", ERROR);
+    logMessage("Fallo crítico", CRITICAL);
 
     return 0;
 }

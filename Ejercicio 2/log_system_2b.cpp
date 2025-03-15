@@ -11,7 +11,8 @@ enum NivelSeveridad
     WARNING,
     ERROR,
     CRITICAL,
-    SECURITY
+    SECURITY,
+    SYSTEM //Este es mi evento personalizado hardcodeado
 };
 
 string obtenerEtiqueta(NivelSeveridad nivel)
@@ -30,6 +31,8 @@ string obtenerEtiqueta(NivelSeveridad nivel)
         return "CRITICAL";
     case SECURITY:
         return "SECURITY";
+    case SYSTEM:
+        return "SYSTEM";
     default:
         return "UNKNOWN";
     }
@@ -87,19 +90,21 @@ int main()
         logMessage("Este es un mensaje de depuración", DEBUG);
         logMessage("El sistema ha iniciado correctamente", INFO);
         logMessage("Se ha detectado un posible problema", WARNING);
-        logMessage("Error al conectar con la base de datos", ERROR);
-        logMessage("Fallo crítico: el sistema debe reiniciarse", CRITICAL);
+        logMessage("Error al conectar con un servicio", ERROR);
+        logMessage("Fallo crítico", CRITICAL);
 
         logMessage("Archivo de configuración no encontrado", "config.txt", 42);
 
         logMessage("Access Granted", "admin");
         logMessage("Access Denied", "hacker123");
 
+        logMessage("Tenemos una actualización de windows 11 pendiente", SYSTEM); //Este es mi evento personalizado hardcodeado
+
         throw runtime_error("Se ha producido un error crítico en el sistema");
     }
     catch (const exception &e)
     {
-        logMessage(e.what(), __FILE__, __LINE__);
+        logMessage(e.what(), "log_system_2b.cpp", 107);
         cerr << "Error en tiempo de ejecución: " << e.what() << endl;
         return 1;
     }

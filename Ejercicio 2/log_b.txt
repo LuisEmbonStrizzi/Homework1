@@ -1,9 +1,10 @@
 [DEBUG] Este es un mensaje de depuración
 [INFO] El sistema ha iniciado correctamente
 [WARNING] Se ha detectado un posible problema
-[ERROR] Error al conectar con la base de datos
-[CRITICAL] Fallo crítico: el sistema debe reiniciarse
+[ERROR] Error al conectar con un servicio
+[CRITICAL] Fallo crítico
 [ERROR] Archivo de configuración no encontrado | Archivo: config.txt | Línea: 42
 [SECURITY] Usuario: admin - Access Granted
 [SECURITY] Usuario: hacker123 - Access Denied
-[ERROR] Se ha producido un error crítico en el sistema | Archivo: log_system(parte 2b).cpp | Línea: 102
+[SYSTEM] Tenemos una actualización de windows 11 pendiente
+[ERROR] Se ha producido un error crítico en el sistema | Archivo: log_system_2b.cpp | Línea: 107
