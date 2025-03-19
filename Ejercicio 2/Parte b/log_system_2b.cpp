@@ -128,7 +128,7 @@ int main()
         logMessage("Fallo crítico", CRITICAL);
 
         // registro de error con detalles del archivo y línea
-        logMessage("Archivo de configuración no encontrado", "config.txt", 42);
+        logMessage("Archivo de configuración no encontrado", "config.txt", 87);
 
         // registro de accesos de usuario
         logMessage("Access Granted", "admin");
@@ -143,7 +143,7 @@ int main()
     catch (const exception &e)
     {
         // registro del error en el log con detalles de la línea de código
-        logMessage(e.what(), "log_system_2b.cpp", 107);
+        logMessage(e.what(), "log_system_2b.cpp", 141);
         cout << "Error en tiempo de ejecución: " << e.what() << endl;
         return 1;
     }
