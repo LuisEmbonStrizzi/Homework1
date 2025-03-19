@@ -1,0 +1,9 @@
+Para facilitar el entendimiento del código hice carpetas con cada parte. Para correr cada parte se debe hacer lo siguiente:
+(Escribí los comandos para ejecutar considerando que el que lee esto va estar parado en la ruta de inicio del repo)
+
+Parte a: 
+cd "Ejercicio 4" && cd "Parte a" && g++ parte4a.cpp -o parte4a && ./parte4a
+Parte b: 
+cd "Ejercicio 4" && cd "Parte b" && g++ parte4b.cpp -o parte4b && ./parte4b
+Parte a: 
+cd "Ejercicio 4" && cd "Parte c" && g++ parte4c.cpp -o parte4c && ./parte4c

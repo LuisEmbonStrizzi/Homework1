@@ -1,0 +1,4 @@
+Explicación de elección entre los tipos string y char*:
+
+Elegí usar string porque es más fácil para comparar cadenas ya que tiene métodos 
+como .length() por ejemplo

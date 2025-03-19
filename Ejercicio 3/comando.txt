@@ -1,0 +1,11 @@
+Para correrlo debe hacer lo siguiente:
+(Escribí los comandos para ejecutar considerando que el que lee esto va estar parado en la ruta de inicio del repo)
+
+
+cd "Ejercicio 3" && g++ lista_enlazada.cpp -o lista_enlazada && ./lista_enlazada
+
+Con valgrind:
+cd "Ejercicio 3" && g++ lista_enlazada.cpp -o lista_enlazada && ./lista_enlazada && valgrind ./lista_enlazada
+
+
+(no hay pérdidas de memoria)

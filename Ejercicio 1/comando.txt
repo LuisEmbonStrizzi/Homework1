@@ -1,0 +1,12 @@
+Para correrlo debe hacer lo siguiente:
+(Escribí los comandos para ejecutar considerando que el que lee esto va estar parado en la ruta de inicio del repo)
+
+cd "Ejercicio 1" && g++ matriz.cpp -o matriz && ./matriz
+
+Con valgrind:
+cd "Ejercicio 1" && g++ matriz.cpp -o matriz && ./matriz && valgrind ./matriz
+
+Aclaración importante: al ejecutar con valgrind primero tira "Memcheck, a memory error detector" pero porque hay que ingresar un valor n,
+luego de esto se analiza el valgrind
+
+(no hay pérdida de memoria)
